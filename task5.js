@@ -3,7 +3,7 @@
 
 function waitingTime(waitingTimes, serialNumber) {
 
-    if (!Array.isArray(waitingTimes) || typeof serialNumber !== 'number') {
+    if (!Array.isArray(waitingTimes) || typeof serialNumber !== 'number' || serialNumber < waitingTimes.length) {
         return 'Invalid Input'
     }
 
